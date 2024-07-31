@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.1.0-rc.1] - 2024-07-31
 
+### Added
+
+- Implement redirect URLs based on predefined rules.
+- Implement automatically find the closest matching route using Levenshtein distance.
+- Add configurable parameters for route combinations.
+
 ## [0.0.0] - 2024-07-31
 
 ### Added
