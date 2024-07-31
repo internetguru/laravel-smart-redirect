@@ -45,6 +45,7 @@ return [
         // 'location' => ['racineves', 'kralupy'],
     ],
 ];
+```
 
 ## Usage
 
