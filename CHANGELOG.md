@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.3] - 2024-07-31
+
+### Fixed
+
+- Fix README middleware example.
+
 ## [0.1.2] - 2024-07-31
 
 ### Fixed
@@ -37,6 +43,7 @@ _Stable release based on [0.1.0-rc.1]._
 - New changelog file.
 
 [Unreleased]: https://https://github.com/internetguru/laravel-smart-redirect/compare/staging...dev
+[0.1.3]: https://https://github.com/internetguru/laravel-smart-redirect/compare/v0.1.2...v0.1.3
 [0.1.2]: https://https://github.com/internetguru/laravel-smart-redirect/compare/v0.1.1...v0.1.2
 [0.1.1]: https://https://github.com/internetguru/laravel-smart-redirect/compare/v0.1.0...v0.1.1
 [0.1.0]: https://https://github.com/internetguru/laravel-smart-redirect/compare/v0.0.0...v0.1.0
