@@ -55,7 +55,7 @@ To always use the middleware, add it to `app/Http/Kernel.php`:
 protected $middlewareGroups = [
     'web' => [
         // Other Middleware
-        \Internetguru\SmartRedirect\Middleware\SmartRedirectMiddleware::class,
+        \Internetguru\SmartRedirect\Middleware\Redirect::class,
     ],
 ];
 ```
@@ -64,7 +64,7 @@ You can also use the middleware only for some of the routes. Register the middle
 
 ```php
 protected $routeMiddleware = [
-    'smart-redirect' => \Internetguru\SmartRedirect\Middleware\SmartRedirectMiddleware::class,
+    'smart-redirect' => \Internetguru\SmartRedirect\Middleware\Redirect::class,
 ];
 ```
 And then use it in your routes, e.g. in `routes/web.php`:
