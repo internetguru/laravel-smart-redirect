@@ -10,7 +10,7 @@ class SmartRedirectServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/smart-redirect.php' => config_path('smart-redirect.php'),
-        ]);
+        ], 'config');
 
         $this->mergeConfigFrom(
             __DIR__ . '/../config/smart-redirect.php',
@@ -20,6 +20,7 @@ class SmartRedirectServiceProvider extends ServiceProvider
 
     public function register()
     {
+        // Register middleware
         $this->app['router']->aliasMiddleware('redirect', \Internetguru\SmartRedirect\Middleware\Redirect::class);
     }
 }
