@@ -20,12 +20,14 @@ class Redirect
 
         if ($response->getStatusCode() == 404) {
             $currentPath = $request->path();
+            $previousUrl = url()->previous();
+            $previousPath = parse_url($previousUrl, PHP_URL_PATH);
             $allRoutes = collect(Route::getRoutes())->map(function ($route) {
                 return $this->generateRouteCombinations($route->uri());
             })->collapse()->toArray();
 
             $closestRoute = $this->findClosestRoute($currentPath, $allRoutes);
-            if ($closestRoute) {
+            if ($closestRoute && $closestRoute !== $previousPath) {
                 return redirect($closestRoute);
             }
         }
