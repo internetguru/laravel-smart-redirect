@@ -2,6 +2,8 @@
     "name": "internetguru/laravel-smart-redirect",
     "description": "A configurable Laravel 11 middleware package that handles URL redirection based on defined routes and uses Levenshtein distance to find the closest matching route for 404 errors.",
     "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Internetguru\\SmartRedirect\\": "src/"
