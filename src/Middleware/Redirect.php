@@ -27,7 +27,7 @@ class Redirect
             })->collapse()->toArray();
 
             $closestRoute = $this->findClosestRoute($currentPath, $allRoutes);
-            if ($closestRoute && $closestRoute !== $previousPath) {
+            if ($closestRoute && $closestRoute !== $previousPath && $closestRoute !== "/$currentPath") {
                 return redirect($closestRoute);
             }
         }
